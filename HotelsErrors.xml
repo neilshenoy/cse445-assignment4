@@ -1,0 +1,149 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- ERROR 1: Root element is "Hotel" instead of "Hotels" -->
+<Hotel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="Hotels.xsd">
+
+	<Hotel Rating="4.2">
+		<Name>Westin</Name>
+		<Phone>480-968-8885</Phone>
+		<Phone>800-937-8461</Phone>
+		<Address NearestAirport="Sky Harbor">
+			<Number>11</Number>
+			<Street>E 7th St</Street>
+			<City>Tempe</City>
+			<State>AZ</State>
+			<Zip>85281</Zip>
+		</Address>
+	</Hotel>
+
+	<!-- ERROR 2: Missing required NearestAirport attribute -->
+	<Hotel Rating="4.0">
+		<Name>Tempe Mission Palms</Name>
+		<Phone>480-894-1400</Phone>
+		<Phone>800-547-8705</Phone>
+		<Address>
+			<Number>60</Number>
+			<Street>E 5th St</Street>
+			<City>Tempe</City>
+			<State>AZ</State>
+			<Zip>85281</Zip>
+		</Address>
+	</Hotel>
+
+	<!-- ERROR 3: Missing Phone element -->
+	<Hotel>
+		<Name>Graduate Tempe</Name>
+		<Address NearestAirport="Sky Harbor">
+			<Number>225</Number>
+			<Street>E Apache Blvd</Street>
+			<City>Tempe</City>
+			<State>AZ</State>
+			<Zip>85281</Zip>
+		</Address>
+	</Hotel>
+
+	<!-- ERROR 4: Address element has no closing tag -->
+	<Hotel Rating="4.3">
+		<Name>Moxy Phoenix Tempe</Name>
+		<Phone>480-968-3451</Phone>
+		<Phone>888-236-2427</Phone>
+		<Phone>480-446-5624</Phone>
+		<Address NearestAirport="Sky Harbor">
+			<Number>1333</Number>
+			<Street>S Rural Rd</Street>
+			<City>Tempe</City>
+			<State>AZ</State>
+			<Zip>85281</Zip>
+		</Hotel>
+
+	<!-- ERROR 5: Two Name elements -->
+	<Hotel Rating="4.1">
+		<Name>Courtyard Phoenix Mesa</Name>
+		<Name>Courtyard Marriott Mesa</Name>
+		<Phone>480-461-3000</Phone>
+		<Address NearestAirport="Sky Harbor">
+			<Number>1221</Number>
+			<Street>S Westwood</Street>
+			<City>Mesa</City>
+			<State>AZ</State>
+			<Zip>85210</Zip>
+		</Address>
+	</Hotel>
+
+	<Hotel>
+		<Name>Hilton Phoenix Airport</Name>
+		<Phone>480-894-1600</Phone>
+		<Phone>800-445-8667</Phone>
+		<Address NearestAirport="Sky Harbor">
+			<Number>2435</Number>
+			<Street>S 47th St</Street>
+			<City>Phoenix</City>
+			<State>AZ</State>
+			<Zip>85034</Zip>
+		</Address>
+	</Hotel>
+
+	<Hotel Rating="4.4">
+		<Name>Renaissance Phoenix Downtown</Name>
+		<Phone>602-333-0000</Phone>
+		<Phone>888-236-2427</Phone>
+		<Address NearestAirport="Sky Harbor">
+			<Number>50</Number>
+			<Street>E Adams St</Street>
+			<City>Phoenix</City>
+			<State>AZ</State>
+			<Zip>85004</Zip>
+		</Address>
+	</Hotel>
+
+	<Hotel Rating="4.5">
+		<Name>Arizona Grand Resort</Name>
+		<Phone>602-431-6474</Phone>
+		<Phone>866-267-1321</Phone>
+		<Address NearestAirport="Sky Harbor">
+			<Number>8000</Number>
+			<Street>Arizona Grand Pkwy</Street>
+			<City>Phoenix</City>
+			<State>AZ</State>
+			<Zip>85044</Zip>
+		</Address>
+	</Hotel>
+
+	<Hotel>
+		<Name>Sheraton Phoenix Downtown</Name>
+		<Phone>602-262-2500</Phone>
+		<Address NearestAirport="Sky Harbor">
+			<Number>340</Number>
+			<Street>N 3rd St</Street>
+			<City>Phoenix</City>
+			<State>AZ</State>
+			<Zip>85004</Zip>
+		</Address>
+	</Hotel>
+
+	<Hotel Rating="4.6">
+		<Name>Hyatt Regency Scottsdale</Name>
+		<Phone>480-444-1234</Phone>
+		<Phone>800-233-1234</Phone>
+		<Address NearestAirport="Scottsdale Airport">
+			<Number>7500</Number>
+			<Street>E Doubletree Ranch Rd</Street>
+			<City>Scottsdale</City>
+			<State>AZ</State>
+			<Zip>85258</Zip>
+		</Address>
+	</Hotel>
+
+	<Hotel Rating="4.3">
+		<Name>The Camby Hotel</Name>
+		<Phone>602-468-0700</Phone>
+		<Address NearestAirport="Sky Harbor">
+			<Number>2401</Number>
+			<Street>E Camelback Rd</Street>
+			<City>Phoenix</City>
+			<State>AZ</State>
+			<Zip>85016</Zip>
+		</Address>
+	</Hotel>
+
+</Hotel>
